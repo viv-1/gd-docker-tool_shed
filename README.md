@@ -147,9 +147,6 @@ tool_dependencies.xml
                 <action type="shell_command">docker pull viv1/samtools:1.2</action>
             </actions>
         </install>
-        <readme>
-
-        </readme>
     </package>
 </tool_dependency>
 ```
