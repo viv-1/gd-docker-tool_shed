@@ -1,6 +1,6 @@
 # gd-docker-tool_shed
 
-galaxy-dist/config modifications :
+# galaxy-dist/config modifications :
 
 galaxy.ini :
 
