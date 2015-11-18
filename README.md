@@ -15,6 +15,9 @@ by
 ```
 tool_dependency_dir = ../tool_dependencies
 ```
+
+Copy job_conf file :
+
 ```
 cp job_conf.xml.sample_basic job_conf.xml
 ```
@@ -59,6 +62,14 @@ by
     </destinations>
 </job_conf>
 ```
+
+# Docker
+
+
+
+# Tool Shed 
+
+
 
 
 
