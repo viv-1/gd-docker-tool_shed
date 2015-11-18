@@ -65,7 +65,27 @@ by
 
 # Docker
 
+1. Create the Dockerfile with require tools and wrapper script if require
 
+2. Add the docker image to docker hub
+
+The first solution is to build locally an push to docker repository
+ ```
+docker build -t viv1/samtools:1.2 -f Dockerfile ./
+docker push viv1/samtools:1.2
+ ```
+
+The second solution is to link a github to the docker hub account and use autobuild functionnality
+
+# Tool xml wrapper
+
+add 
+
+```
+<requirements>
+  <container type="docker">samtools-1.2</container>
+</requirements>
+```
 
 # Tool Shed 
 
