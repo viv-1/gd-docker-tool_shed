@@ -5,21 +5,30 @@ galaxy-dist/config modifications :
 galaxy.ini :
 
 Replace : 
-# tool_dependency_dir = None
-by
-tool_dependency_dir = ../tool_dependencies
 
+```
+# tool_dependency_dir = None
+```
+
+by
+
+```
+tool_dependency_dir = ../tool_dependencies
+```
+```
 cp job_conf.xml.sample_basic job_conf.xml
+```
 
 job_conf.xml :
 
-# Replace : 
+Replace : 
 
+```
 <?xml version="1.0"?>
-<!-- A sample job config that explicitly configures job running the way it is configured by default (if there is no explicit config). -->
-<job_conf>
-    <plugins>
-        <plugin id="local" type="runner" load="galaxy.jobs.runners.local:LocalJobRunner" workers="4"/>
+<!-- A sample job config that explicitly configures job running the way it is configured by default (if there is no explicit  config). -->
+    <job_conf>
+        <plugins>
+            <plugin id="local" type="runner" load="galaxy.jobs.runners.local:LocalJobRunner" workers="4"/>
     </plugins>
     <handlers>
         <handler id="main"/>
@@ -28,14 +37,16 @@ job_conf.xml :
         <destination id="local" runner="local"/>
     </destinations>
 </job_conf>
+```
 
 by
 
+```
 <?xml version="1.0"?>
 <!-- A sample job config that explicitly configures job running the way it is configured by default (if there is no explicit config). -->
-<job_conf>
-    <plugins>
-        <plugin id="local" type="runner" load="galaxy.jobs.runners.local:LocalJobRunner" workers="4"/>
+    <job_conf>
+        <plugins>
+            <plugin id="local" type="runner" load="galaxy.jobs.runners.local:LocalJobRunner" workers="4"/>
     </plugins>
     <handlers>
         <handler id="main"/>
@@ -47,7 +58,7 @@ by
        </destination>
     </destinations>
 </job_conf>
-
+```
 
 
 
